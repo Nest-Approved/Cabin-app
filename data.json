@@ -1,18 +1,105 @@
 {
   "menu": [
-    { "id": "spring", "title": "Spring Reopening Checklist" }
+    { "id": "spring", "title": "Spring Reopening Checklist" },
+    { "id": "summer", "title": "Summer Maintenance Checklist" },
+    { "id": "fall", "title": "Fall Preparation Checklist" },
+    { "id": "winter", "title": "Winter Safety Checklist" }
   ],
   "checklists": {
     "spring": [
       {
-        "id": "test",
-        "text": "Test item",
-        "why": "This is a test.",
-        "look": "If you see this, JSON works.",
-        "mistake": "None",
-        "pro": "Never",
-        "note": "System test"
+        "id": "s1",
+        "text": "Inspect roof shingles",
+        "why": "Freeze-thaw cycles commonly loosen or crack shingles, creating leak paths.",
+        "look": "Missing, curled, cracked, or displaced shingles.",
+        "mistake": "Assuming leaks only show up inside.",
+        "pro": "If multiple shingles are damaged or the roof is steep.",
+        "note": "Roof damage is often visible from the ground with binoculars."
+      },
+      {
+        "id": "s2",
+        "text": "Check roof flashing",
+        "why": "Improper flashing is a leading cause of roof leaks.",
+        "look": "Rust, gaps, lifted edges, or missing sealant.",
+        "mistake": "Using caulk instead of proper flashing repair.",
+        "pro": "If flashing is integrated with roofing materials.",
+        "note": "Sealants fail; flashing is the real defense."
+      },
+      {
+        "id": "s3",
+        "text": "Clean gutters",
+        "why": "Blocked gutters overflow and damage siding and foundations.",
+        "look": "Debris buildup or standing water.",
+        "mistake": "Cleaning only visible sections.",
+        "pro": "If gutters are high or poorly sloped.",
+        "note": "Overflow stains show past issues."
+      },
+      {
+        "id": "s4",
+        "text": "Verify downspout discharge",
+        "why": "Improper discharge directs water toward the foundation.",
+        "look": "Downspouts ending near the house.",
+        "mistake": "Removing extensions for appearance.",
+        "pro": "If grading changes are required.",
+        "note": "Water control protects foundations."
+      },
+      {
+        "id": "s5",
+        "text": "Check exterior grading",
+        "why": "Negative grading causes foundation moisture intrusion.",
+        "look": "Soil sloping toward the structure.",
+        "mistake": "Adding mulch without correcting slope.",
+        "pro": "If regrading is extensive.",
+        "note": "Slope is more important than soil type."
+      },
+      {
+        "id": "s6",
+        "text": "Inspect foundation walls",
+        "why": "Cracks can indicate movement or moisture problems.",
+        "look": "Horizontal or stair-step cracks.",
+        "mistake": "Ignoring hairline cracks.",
+        "pro": "If cracks are widening or offset.",
+        "note": "Crack pattern matters more than size."
+      },
+      {
+        "id": "s7",
+        "text": "Inspect siding condition",
+        "why": "Damaged siding allows water and pests inside walls.",
+        "look": "Rot, cracks, or missing pieces.",
+        "mistake": "Painting over deterioration.",
+        "pro": "If structural components are affected.",
+        "note": "Probe wood siding near grade."
+      },
+      {
+        "id": "s8",
+        "text": "Check window seals",
+        "why": "Failed seals allow water and air infiltration.",
+        "look": "Cracked or missing exterior caulk.",
+        "mistake": "Sealing only from the inside.",
+        "pro": "If window removal is needed.",
+        "note": "Exterior sealing is critical."
+      },
+      {
+        "id": "s9",
+        "text": "Inspect decks and railings",
+        "why": "Loose or rotted components create fall hazards.",
+        "look": "Wobble, rot, or loose fasteners.",
+        "mistake": "Only checking deck boards.",
+        "pro": "If ledger attachment is questionable.",
+        "note": "Ledger failures cause collapses."
+      },
+      {
+        "id": "s10",
+        "text": "Test exterior GFCI outlets",
+        "why": "Faulty GFCIs increase shock risk.",
+        "look": "No trip or reset.",
+        "mistake": "Assuming indoor protection covers exterior.",
+        "pro": "If outlets fail testing.",
+        "note": "Exterior outlets must be GFCI protected."
       }
-    ]
+    ],
+    "summer": [],
+    "fall": [],
+    "winter": []
   }
 }
