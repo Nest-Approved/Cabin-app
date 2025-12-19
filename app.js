@@ -3,13 +3,16 @@ let data = {};
 let state = JSON.parse(localStorage.getItem("nestApprovedState")) || {};
 
 fetch("./data.json")
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return res.json();
+  })
   .then(json => {
     data = json;
     renderMenu();
   })
   .catch(err => {
-    app.innerHTML = "<p>Error loading data.json</p>";
+    app.innerHTML = "<p style='color:red'>Error loading data.json</p>";
     console.error(err);
   });
 
@@ -78,21 +81,17 @@ function showChecklist(id, title) {
     `;
 
     if (item.badImage) {
-      const badWrap = document.createElement("div");
-      badWrap.innerHTML = `
+      details.innerHTML += `
         <div style="margin-top:10px;">❌ Example of an issue</div>
         <img src="${item.badImage}" style="width:100%;border:3px solid red;border-radius:6px;">
       `;
-      details.appendChild(badWrap);
     }
 
     if (item.goodImage) {
-      const goodWrap = document.createElement("div");
-      goodWrap.innerHTML = `
+      details.innerHTML += `
         <div style="margin-top:10px;">✅ Acceptable condition</div>
         <img src="${item.goodImage}" style="width:100%;border:3px solid green;border-radius:6px;">
       `;
-      details.appendChild(goodWrap);
     }
 
     checkbox.onchange = () => {
@@ -104,4 +103,4 @@ function showChecklist(id, title) {
     box.appendChild(details);
     app.appendChild(box);
   });
-                                              }
+}
