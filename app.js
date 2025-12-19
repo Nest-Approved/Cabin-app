@@ -2,7 +2,7 @@ const app = document.getElementById("app");
 let data = {};
 let state = JSON.parse(localStorage.getItem("nestApprovedState")) || {};
 
-fetch("data.json")
+fetch("./data.json")
   .then(res => res.json())
   .then(json => {
     data = json;
