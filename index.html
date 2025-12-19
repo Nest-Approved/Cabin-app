@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nest Approved — home inspection checklists" />
+  <meta name="theme-color" content="#ffffff" />
   <title>Nest Approved</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/favicon.ico" />
   <style>
+    :root {
+      --page-bg: #f4f4f4;
+      --card-bg: #ffffff;
+      --muted: #666666;
+      --focus: #99ccff;
+    }
+    html,body { height: 100%; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       margin: 0;
       padding: 12px;
-      background: #f4f4f4;
+      background: var(--page-bg);
+      color: #111;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
     }
-    h1, h2 {
-      margin-top: 0;
-    }
-    .menu-item, .back {
-      background: #fff;
+    h1, h2 { margin-top: 0; }
+    .container { max-width: 900px; margin: 0 auto; }
+    button.menu-item, button.back {
+      display: block;
+      width: 100%;
+      background: var(--card-bg);
+      border: none;
       padding: 14px;
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
       border-radius: 6px;
+      text-align: left;
       cursor: pointer;
-      box-shadow: 0 1px 3px rgba(0,0,0,.15);
+      box-shadow: 0 1px 3px rgba(0,0,0,.12);
+      font-size: 1rem;
     }
+    button.menu-item:focus, button.back:focus { outline: 3px solid var(--focus); }
     .checklist-item {
-      background: #fff;
+      background: var(--card-bg);
       padding: 12px;
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
       border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,.15);
+      box-shadow: 0 1px 3px rgba(0,0,0,.12);
     }
-    .details {
-      margin-top: 8px;
-      font-size: 0.9em;
-    }
-    .good {
-      border: 2px solid green;
-      padding: 6px;
-      margin-top: 6px;
-    }
-    .bad {
-      border: 2px solid red;
-      padding: 6px;
-      margin-top: 6px;
-    }
+    .details { margin-top: 8px; font-size: .95rem; color: var(--muted); }
+    .good { border: 2px solid green; padding: 6px; margin-top: 6px; border-radius:6px; }
+    .bad { border: 2px solid red; padding: 6px; margin-top: 6px; border-radius:6px; }
+    img { max-width: 100%; height: auto; display: block; margin-top: 6px; border-radius: 6px; }
+    .small-note { font-size: .9rem; color: var(--muted); margin-top: 6px; }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Nest Approved</h1>
+    <div id="app" aria-live="polite">Loading…</div>
 
-<h1>Nest Approved</h1>
-<div id="app">Loading…</div>
+    <noscript>
+      <div style="background:#fff3f3;padding:10px;border-radius:6px;margin-top:12px;">
+        This app requires JavaScript. Please enable JavaScript to use the checklists.
+      </div>
+    </noscript>
+  </div>
 
-<script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
