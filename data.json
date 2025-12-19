@@ -1,48 +1,18 @@
 {
   "menu": [
-    { "id": "spring", "title": "Spring Reopening Checklist" },
-    { "id": "summer", "title": "Summer Maintenance Checklist" },
-    { "id": "fall", "title": "Fall Preparation Checklist" },
-    { "id": "winter", "title": "Winter Safety Checklist" }
+    { "id": "spring", "title": "Spring Reopening Checklist" }
   ],
   "checklists": {
     "spring": [
       {
-        "id": "s1",
-        "text": "Inspect roof shingles",
-        "why": "Freeze-thaw cycles commonly loosen or crack shingles, creating leak paths.",
-        "look": "Missing, curled, cracked, or displaced shingles.",
-        "mistake": "Assuming leaks only show up inside.",
-        "pro": "If multiple shingles are damaged or roof is steep.",
-        "note": "Roof damage is often visible from the ground with binoculars.",
-        "badImage": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Damaged_roof_shingles.jpg",
-        "goodImage": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Asphalt_shingle_roof.jpg"
-      },
-      {
-        "id": "s2",
-        "text": "Check roof flashing",
-        "why": "Improper flashing is one of the most common sources of water intrusion.",
-        "look": "Rust, gaps, lifted edges, or missing sealant.",
-        "mistake": "Relying on caulk alone instead of proper flashing.",
-        "pro": "If flashing is embedded or integrated with roofing.",
-        "note": "Sealants fail; metal flashing is the primary defense.",
-        "badImage": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Improper_roof_flashing.jpg",
-        "goodImage": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Proper_roof_flashing.jpg"
-      },
-      {
-        "id": "s3",
-        "text": "Clean gutters",
-        "why": "Blocked gutters cause overflow that damages siding and foundations.",
-        "look": "Leaves, debris, standing water.",
-        "mistake": "Only cleaning visible sections.",
-        "pro": "If gutters are high or improperly sloped.",
-        "note": "Overflow stains are evidence of past problems.",
-        "badImage": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Clogged_gutter.jpg",
-        "goodImage": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Clean_gutter.jpg"
+        "id": "test",
+        "text": "Test item",
+        "why": "This is a test.",
+        "look": "If you see this, JSON works.",
+        "mistake": "None",
+        "pro": "Never",
+        "note": "System test"
       }
-    ],
-    "summer": [],
-    "fall": [],
-    "winter": []
+    ]
   }
 }
