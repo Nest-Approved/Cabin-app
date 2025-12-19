@@ -1,0 +1,26 @@
+{
+  "name": "nest-approved-cabin-app",
+  "version": "1.0.0",
+  "description": "Nest Approved — static checklist web app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nest-Approved/Cabin-app.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "serve -s .",
+    "preview": "serve -s .",
+    "validate-data": "ajv validate -s schema.json -d data.json --strict=false",
+    "format": "prettier --write ."
+  },
+  "author": "Nest-Approved",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv-cli": "^5.0.0",
+    "serve": "^14.0.0",
+    "prettier": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
