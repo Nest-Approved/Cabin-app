@@ -1,4 +1,7 @@
 {
+  "schemaVersion": "1.0",
+  "lastUpdated": "2025-12-19",
+  "locale": "en-US",
   "menu": [
     { "id": "spring", "title": "Spring Reopening Checklist" },
     { "id": "summer", "title": "Summer Maintenance Checklist" },
@@ -81,25 +84,4 @@
       },
       {
         "id": "s9",
-        "text": "Inspect decks and railings",
-        "why": "Loose or rotted components create fall hazards.",
-        "look": "Wobble, rot, or loose fasteners.",
-        "mistake": "Only checking deck boards.",
-        "pro": "If ledger attachment is questionable.",
-        "note": "Ledger failures cause collapses."
-      },
-      {
-        "id": "s10",
-        "text": "Test exterior GFCI outlets",
-        "why": "Faulty GFCIs increase shock risk.",
-        "look": "No trip or reset.",
-        "mistake": "Assuming indoor protection covers exterior.",
-        "pro": "If outlets fail testing.",
-        "note": "Exterior outlets must be GFCI protected."
-      }
-    ],
-    "summer": [],
-    "fall": [],
-    "winter": []
-  }
-}
+        "text": "
